@@ -120,15 +120,9 @@
     });
   });
 
-  // Keep the name fixed; tuck the social links away when reading a section.
-  function updateHeaderLinks() {
-    body.classList.toggle('is-scrolled', window.scrollY > 24);
-  }
-  window.addEventListener('scroll', updateHeaderLinks, { passive: true });
   window.addEventListener('resize', function () {
     if (focusedSection) updateScrollSpace(focusedSection);
   });
-  updateHeaderLinks();
 
   var toTop = document.getElementById('toTop');
   if (toTop) toTop.addEventListener('click', function (e) {
