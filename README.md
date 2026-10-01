@@ -6,7 +6,7 @@ Static personal site for https://02jn1.github.io/. No build step is required.
 
 - `index.html`: page content and theme initialization.
 - `styles.css`: responsive layout, light and dark palettes, and portrait cards.
-- `script.js`: accordion, section positioning, scroll intro, theme toggle, and Pacific-time clock.
+- `script.js`: accordion, section positioning, social-link visibility, theme toggle, and Pacific-time clock.
 - `assets/`: both profile photos used in the ID section.
 - `.nojekyll`: serves the static files directly through GitHub Pages.
 
@@ -21,7 +21,8 @@ Copy these files and the `assets/` folder to the root of `02jn1/02jn1.github.io`
 ## Behavior
 
 - The sun/moon button switches themes and saves the choice in this browser.
-- LinkedIn and Instagram appear beside the theme button and fade away on scroll.
+- The page opens directly to JUNI and the section menu; there is no scrolling intro or down arrow.
+- LinkedIn and Instagram sit side by side beneath JUNI and hide when scrolling into a section.
 - Opening an accordion section positions its heading below the fixed site name. Only one section opens at a time.
 - Both photo cards appear inside the expandable ID section.
 - Reduced-motion preferences disable the animated transitions.

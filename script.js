@@ -118,27 +118,16 @@
     });
   });
 
-  // Intro: name travels from center to top-left as you scroll
-  function onScroll() {
-    var h = window.innerHeight || 800;
-    var y = window.scrollY || root.scrollTop || 0;
-    var t = Math.min(1, Math.max(0, y / (h * 0.85)));
-    var e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-    root.style.setProperty('--p', e.toFixed(4));
-    body.classList.toggle('past', e > 0.5);
+  // Keep the name fixed; tuck the social links away when reading a section.
+  function updateHeaderLinks() {
+    body.classList.toggle('is-scrolled', window.scrollY > 24);
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll);
+  window.addEventListener('scroll', updateHeaderLinks, { passive: true });
   window.addEventListener('resize', function () {
     if (focusedSection) updateScrollSpace(focusedSection);
   });
-  onScroll();
+  updateHeaderLinks();
 
-  var chev = document.getElementById('chev');
-  if (chev) chev.addEventListener('click', function () {
-    stopSectionScroll();
-    window.scrollTo({ top: window.innerHeight || 800, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
-  });
   var toTop = document.getElementById('toTop');
   if (toTop) toTop.addEventListener('click', function (e) {
     e.preventDefault();
