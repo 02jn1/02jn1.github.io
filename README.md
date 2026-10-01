@@ -7,7 +7,7 @@ Static personal site for https://02jn1.github.io/. No build step is required.
 - `index.html`: page content and theme initialization.
 - `styles.css`: responsive layout, light and dark palettes, and portrait cards.
 - `script.js`: accordion, section positioning, social-link visibility, theme toggle, and Pacific-time clock.
-- `assets/`: both profile photos used in the ID section.
+- `assets/`: both profile photos and the Angular signature artwork.
 - `.nojekyll`: serves the static files directly through GitHub Pages.
 
 ## Preview
@@ -21,9 +21,9 @@ Copy these files and the `assets/` folder to the root of `02jn1/02jn1.github.io`
 ## Behavior
 
 - The sun/moon button switches themes and saves the choice in this browser.
-- The page opens directly to JUNI and the section menu; there is no scrolling intro or down arrow.
-- LinkedIn and Instagram sit side by side beneath JUNI and hide when scrolling into a section.
-- Opening an accordion section positions its heading below the fixed site name. Only one section opens at a time.
+- The page opens directly to the signature logo and the section menu; there is no scrolling intro or down arrow.
+- LinkedIn and Instagram icons with external-link arrows sit side by side beneath the signature and hide when scrolling into a section.
+- Opening an accordion section positions its heading below the fixed signature header. Only one section opens at a time.
 - Both photo cards appear inside the expandable ID section.
 - Reduced-motion preferences disable the animated transitions.
 - Google Fonts supplies Arimo, DM Mono, and Hanken Grotesk.

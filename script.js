@@ -38,6 +38,7 @@
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var focusFrame = 0;
   var focusedSection = null;
+  var siteHeader = document.querySelector('.site-header');
 
   function stopSectionScroll() {
     cancelAnimationFrame(focusFrame);
@@ -46,7 +47,8 @@
   }
 
   function stageOffset() {
-    return Math.max(120, Math.min(180, window.innerHeight * 0.16));
+    var headerBottom = siteHeader ? siteHeader.getBoundingClientRect().bottom : 0;
+    return Math.max(headerBottom + 20, Math.max(120, Math.min(180, window.innerHeight * 0.16)));
   }
 
   // Short sections need enough room below them to reach the same position.
