@@ -6,162 +6,110 @@
 <title>Juni</title>
 <meta name="description" content="Juni Kim — project management, journalism and philosophy. Southern California.">
 <meta name="theme-color" content="#000000">
-<script>
-(function () {
-  var theme = 'dark';
-  try { if (localStorage.getItem('juni-theme') === 'light') theme = 'light'; } catch (e) {}
-  document.documentElement.setAttribute('data-theme', theme);
-  document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'light' ? '#e2e2e2' : '#000000');
-})();
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Hanken+Grotesk:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=8a32c62b09">
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Caveat:wght@400;500&family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=here-there-1">
 </head>
 <body>
-<div id="top" style="min-height: 100vh; background: var(--paper); color: var(--ink); font-family: 'Hanken Grotesk', 'Helvetica Neue', Helvetica, sans-serif; -webkit-font-smoothing: antialiased">
+<div id="top" style="min-height:100vh;background:var(--paper);color:var(--ink);font-family:'Hanken Grotesk','Helvetica Neue',Helvetica,sans-serif;-webkit-font-smoothing:antialiased">
 <div class="header-shade" aria-hidden="true"></div>
 <header class="site-header">
 <a href="#top" id="toTop" class="site-name" aria-label="Juni Kim — back to top"><img class="site-signature" src="assets/juni-signature-angular.png" alt="Juni Kim" width="1254" height="1254" decoding="async"></a>
 </header>
-<div class="header-actions">
-<button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
-<svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
-<svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
-</button>
-</div>
 <main class="wrap">
-
-<section id="id">
-<button class="sec-btn" data-toggle aria-expanded="false" style="all: unset; box-sizing: border-box; width: 100%; min-height: 44px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 2px 0">
-<span class="sec-label" style="font-family: Arimo, 'Helvetica Neue', Helvetica, sans-serif; font-size: 40px; line-height: 1.05; letter-spacing: -0.035em">ID</span>
-<span style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted); display: flex; gap: 24px"><span class="sign" aria-hidden="true">+</span></span>
+<section id="about">
+<button class="sec-btn" data-toggle aria-expanded="false" aria-controls="about-panel">
+<img class="handwritten-title title-about" src="assets/section-labels/about.png" alt="About" width="520" height="280">
+<span class="sign" aria-hidden="true">+</span>
 </button>
-<div class="panel" aria-hidden="true" inert>
-<div class="tab" style="overflow: hidden; min-height: 0; padding-left: 56px">
-<div style="padding: 16px 0 72px">
+<div class="panel" id="about-panel" aria-hidden="true" inert>
+<div class="tab section-content">
+<div class="about-grid">
+<div class="about-intro">
 <div class="id-portraits">
 <img class="id-portrait id-portrait-back" src="assets/juni-portrait.jpg" alt="Juni Kim, black-and-white portrait" width="88" height="88" decoding="async">
 <span class="id-portrait id-portrait-front"><img src="assets/juni-portrait-color.jpg" alt="Juni Kim, color portrait" width="88" height="88" decoding="async"></span>
 </div>
 <p class="id-name">Juni Kim</p>
-<div style="display: flex; flex-direction: column; gap: 12px; font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; line-height: 1.6">
-<span style="color: var(--muted)">Based in</span>
-<span style="color: var(--ink)">OC/LA</span>
-<span style="color: var(--muted); max-width: 52ch">Working remotely with teams in California, Nevada, Kansas, and beyond.</span>
-<span style="color: var(--muted)">Local time — <span class="js-time">12:00 PM PT</span></span>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-top: 32px; padding-top: 24px; font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; line-height: 1.6">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span style="color: var(--muted)">Capabilities</span>
-<span style="color: var(--ink)">Project Management<br>Product Strategy<br>QA/QC<br>Technical Writing<br>Brand Strategy<br>+</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span style="color: var(--muted)">Education</span>
-<span style="color: var(--ink)">UCI alumni<br>Literary Journalism / Philosophy<br>Magna Cum Laude</span>
+<div class="mono-stack">
+<span class="eyebrow">Based in</span><span>OC / LA</span>
+<span class="eyebrow">At work</span><span>Working remotely with teams in California, Nevada, Kansas, and beyond.</span>
+<span class="eyebrow">Local time</span><span class="js-time">12:00 PM PT</span>
 </div>
 </div>
+<div class="about-details">
+<div class="about-block">
+<h2>Work</h2>
+<p><a href="https://requant.com/" target="_blank" rel="noopener">ReQuant ↗</a> — private AI infrastructure. Product operations, quality, prompt design, and technical writing.</p>
+<p>Healthcare operations: mapping legacy billing systems and shaping reporting workflows for 120+ residents.</p>
+<p><a href="https://surfdontswim.com/" target="_blank" rel="noopener">Surf, Don’t Swim ↗</a> — long-form editorial, social, and podcast work on artificial intelligence.</p>
 </div>
+<div class="about-block">
+<h2>Education</h2>
+<p>UC Irvine<br>Literary Journalism / Philosophy<br>Magna Cum Laude</p>
 </div>
-</div>
-</section>
-
-<section id="notable">
-<button class="sec-btn" data-toggle aria-expanded="false" style="all: unset; box-sizing: border-box; width: 100%; min-height: 44px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 2px 0">
-<span class="sec-label" style="font-family: Arimo, 'Helvetica Neue', Helvetica, sans-serif; font-size: 40px; line-height: 1.05; letter-spacing: -0.035em">Notable</span>
-<span style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted); display: flex; gap: 24px"><span class="sign" aria-hidden="true">+</span></span>
-</button>
-<div class="panel" aria-hidden="true" inert>
-<div class="tab" style="overflow: hidden; min-height: 0; padding-left: 56px">
-<div style="padding: 8px 0 72px; display: flex; flex-direction: column">
-<div style="padding: 20px 0;">
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; color: var(--ink); max-width: 60ch"><a href="https://requant.com/" target="_blank" rel="noopener">ReQuant ↗</a> — Private AI infrastructure.</div>
-</div>
-<div style="padding: 20px 0;">
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; color: var(--ink); max-width: 60ch">Legacy billing systems mapped, then rebuilt as an automated application serving 120+ residents. A real-time financial reporting system, with business requirements for comparative analytics tracking compensation from Managed Care Organizations.</div>
-</div>
-<div style="padding: 20px 0;">
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; color: var(--ink); max-width: 60ch">Long-form editorial, social, and podcast work on artificial intelligence, covering research, brand, and production.<br>
-<a href="https://surfdontswim.com/" target="_blank" rel="noopener" aria-label="SDS — Surf, Don't Swim" style="display: inline-block; margin-top: 12px">SDS ↗</a></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section id="discretionary">
-<button class="sec-btn" data-toggle aria-expanded="false" style="all: unset; box-sizing: border-box; width: 100%; min-height: 44px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 2px 0">
-<span class="sec-label" style="font-family: Arimo, 'Helvetica Neue', Helvetica, sans-serif; font-size: 40px; line-height: 1.05; letter-spacing: -0.035em">Off-Duty</span>
-<span style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted); display: flex; gap: 24px"><span class="sign" aria-hidden="true">+</span></span>
-</button>
-<div class="panel" aria-hidden="true" inert>
-<div class="tab" style="overflow: hidden; min-height: 0; padding-left: 56px">
-<div style="padding: 8px 0 72px; display: flex; flex-direction: column">
-<div style="padding: 20px 0">
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; color: var(--ink)"><a href="https://www.goodreads.com/user/show/92004612" target="_blank" rel="noopener">Goodreads ↗</a></div>
-</div>
-<div style="padding: 20px 0">
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; color: var(--ink)"><a href="https://open.spotify.com/user/junicoleenk" target="_blank" rel="noopener">Spotify ↗</a></div>
-</div>
-<div class="row2" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 32px; padding: 20px 0;">
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; color: var(--muted); padding-top: 3px">Otherwise</div>
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; color: var(--ink)">Locating coffee... maybe @ the gym</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section id="history">
-<button class="sec-btn" data-toggle aria-expanded="false" style="all: unset; box-sizing: border-box; width: 100%; min-height: 44px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 2px 0">
-<span class="sec-label" style="font-family: Arimo, 'Helvetica Neue', Helvetica, sans-serif; font-size: 40px; line-height: 1.05; letter-spacing: -0.035em">History</span>
-<span style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted); display: flex; gap: 24px"><span class="sign" aria-hidden="true">+</span></span>
-</button>
-<div class="panel" aria-hidden="true" inert>
-<div class="tab" style="overflow: hidden; min-height: 0; padding-left: 56px">
-<div style="padding: 18px 0 72px">
-<div class="history-summary">
-<div class="history-group">
-<h3 class="history-heading">Education</h3>
-<p>UCI alumni<br>Literary Journalism / Philosophy<br>Magna Cum Laude</p>
-</div>
-<div class="history-group">
-<h3 class="history-heading">Experience</h3>
-<p>Specialization across AI product operations, healthcare operations, technical writing and brand creative direction.</p>
+<div class="about-block">
+<h2>Across the work</h2>
+<p>Project management · product strategy · QA/QC · technical writing · brand creative direction</p>
 <p>Now focused on AI products and workflows.</p>
 </div>
-<a href="https://www.linkedin.com/in/juni-c-kim/" target="_blank" rel="noopener">LinkedIn ↗</a>
 </div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="here-there">
+<button class="sec-btn" data-toggle aria-expanded="false" aria-controls="here-there-panel">
+<img class="handwritten-title title-here-there" src="assets/section-labels/here-there.png" alt="Here and there" width="880" height="360">
+<span class="sign" aria-hidden="true">+</span>
+</button>
+<div class="panel" id="here-there-panel" aria-hidden="true" inert>
+<div class="tab section-content">
+<div class="photo-gallery">
+<figure class="photo-card photo-card-tall">
+<img src="assets/gallery/uci.jpg" alt="A rainy day under a large tree at UC Irvine" loading="lazy">
+<figcaption>rainy day, undergrad at uci</figcaption>
+</figure>
+<figure class="photo-card photo-card-wide">
+<img src="assets/gallery/segerstrom-nutcracker.jpg" alt="The audience inside Segerstrom Center for the Nutcracker" loading="lazy">
+<figcaption>segerstrom center, nutcracker</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="assets/gallery/christmas-in-chicago.jpg" alt="Christmas lights in Chicago in 2023" loading="lazy">
+<figcaption>christmas in chi, 2023</figcaption>
+</figure>
+<figure class="photo-card photo-card-portrait">
+<img src="assets/gallery/linkedin.jpg" alt="Juni Kim, LinkedIn profile photo" loading="lazy">
+<figcaption>linkedin pfp</figcaption>
+</figure>
 </div>
 </div>
 </div>
 </section>
 
 <section id="contact">
-<button class="sec-btn" data-toggle aria-expanded="false" style="all: unset; box-sizing: border-box; width: 100%; min-height: 44px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 2px 0">
-<span class="sec-label" style="font-family: Arimo, 'Helvetica Neue', Helvetica, sans-serif; font-size: 40px; line-height: 1.05; letter-spacing: -0.035em">Contact</span>
-<span style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted); display: flex; gap: 24px"><span class="sign" aria-hidden="true">+</span></span>
+<button class="sec-btn" data-toggle aria-expanded="false" aria-controls="contact-panel">
+<img class="handwritten-title title-contact" src="assets/section-labels/contact.png" alt="Contact" width="560" height="260">
+<span class="sign" aria-hidden="true">+</span>
 </button>
-<div class="panel" aria-hidden="true" inert>
-<div class="tab" style="overflow: hidden; min-height: 0; padding-left: 56px">
-<div style="padding: 8px 0 72px; display: flex; flex-direction: column">
-<div class="row2" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 32px; padding: 20px 0;">
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; color: var(--muted); padding-top: 3px">Elsewhere</div>
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; color: var(--ink); display: flex; gap: 24px; flex-wrap: wrap"><a href="https://www.linkedin.com/in/juni-c-kim/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://www.instagram.com/junicoleen/" target="_blank" rel="noopener">Instagram ↗</a></div>
-</div>
-<div class="row2" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 32px; padding: 20px 0;">
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; color: var(--muted); padding-top: 3px">Local time</div>
-<div style="font-family: 'DM Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; color: var(--ink)"><span class="js-time">12:00 PM PT</span></div>
-</div>
+<div class="panel" id="contact-panel" aria-hidden="true" inert>
+<div class="tab section-content">
+<div class="contact-list">
+<div class="contact-row"><span class="eyebrow">Elsewhere</span><div class="contact-links">
+<a href="https://www.linkedin.com/in/juni-c-kim/" target="_blank" rel="noopener">LinkedIn ↗</a>
+<a href="https://www.instagram.com/junicoleen/" target="_blank" rel="noopener">Instagram ↗</a>
+<a href="https://www.goodreads.com/user/show/92004612" target="_blank" rel="noopener">Goodreads ↗</a>
+<a href="https://open.spotify.com/user/junicoleenk" target="_blank" rel="noopener">Spotify ↗</a>
+</div></div>
+<div class="contact-row"><span class="eyebrow">Local time</span><span class="js-time">12:00 PM PT</span></div>
 </div>
 </div>
 </div>
 </section>
-
-
 </main>
 </div>
-<script src="script.js?v=1f0d31cfda"></script>
+<script src="script.js?v=here-there-1"></script>
 </body>
 </html>
