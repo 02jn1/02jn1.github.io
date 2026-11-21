@@ -62,7 +62,7 @@ section.open .sec-label{font-weight:600;color:var(--ink)}
 /* Here & There update */
 .sec-btn{all:unset;box-sizing:border-box;width:100%;min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:2px 0;cursor:pointer}
 .sec-btn:focus-visible{outline:1px solid var(--ink);outline-offset:5px}
-.handwritten-title{display:block;width:auto;height:22px;max-width:60px;object-fit:contain;background:#000;filter:url(#thin-strokes)}
+.handwritten-title{display:block;width:auto;height:32px;max-width:80px;object-fit:contain;background:#000}
 .title-about{width:auto}
 .title-here-there{width:auto}
 .title-contact{width:auto}
