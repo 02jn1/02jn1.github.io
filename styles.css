@@ -64,7 +64,7 @@ section.open .sec-label{font-weight:600;color:var(--ink)}
 .sec-btn:focus-visible{outline:1px solid var(--ink);outline-offset:5px}
 .handwritten-title{display:block;width:auto;height:40px;max-width:110px;object-fit:contain;background:#000}
 .title-about{width:auto}
-.title-here-there{width:auto}
+.title-here-there{width:auto;height:48px;max-width:132px}
 .title-contact{width:auto}
 .sign{flex:0 0 auto;font-family:'DM Mono',ui-monospace,monospace;font-size:16px;line-height:1;color:var(--muted);padding-right:4px}
 section.open .sign{color:var(--ink)}
