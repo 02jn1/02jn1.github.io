@@ -90,6 +90,8 @@ section.open .sign{color:var(--ink)}
 .place-gallery-label{margin:0 0 9px;color:var(--muted);font-family:'DM Mono',ui-monospace,monospace;font-size:10px;font-weight:400;letter-spacing:.08em;text-transform:lowercase}
 .place-gallery-row{display:flex;gap:8px;align-items:flex-start}
 .place-gallery-photo{display:block;width:58px;height:58px;object-fit:cover;background:#111}
+.sf-place-gallery .place-gallery-row{gap:12px;flex-wrap:nowrap}
+.sf-place-gallery .place-gallery-photo{width:100px;height:100px}
 .place-gallery-card{width:72px;margin:0}
 .place-gallery-card figcaption{width:72px;margin-top:6px;color:var(--muted);font-family:'DM Mono',ui-monospace,monospace;font-size:10px;line-height:1.4;font-weight:400;letter-spacing:.02em}
 .contact-list{display:flex;flex-direction:column;gap:26px;max-width:740px;font-family:'DM Mono',ui-monospace,monospace;font-size:13px;line-height:1.7}
