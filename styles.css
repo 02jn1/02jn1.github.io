@@ -86,10 +86,12 @@ section.open .sign{color:var(--ink)}
 .photo-card-color img{filter:none}
 .photo-card-portrait img{aspect-ratio:4/5;object-position:center 30%}
 .photo-card figcaption{width:120px;margin-top:8px;color:var(--muted);font-family:'DM Mono',ui-monospace,monospace;font-size:11px;line-height:1.6;font-weight:400;letter-spacing:.02em}
-.sf-gallery{margin-top:28px}
-.sf-gallery-label{margin:0 0 9px;color:var(--muted);font-family:'DM Mono',ui-monospace,monospace;font-size:10px;font-weight:400;letter-spacing:.08em;text-transform:lowercase}
-.sf-gallery-row{display:flex;gap:8px;align-items:flex-start}
-.sf-gallery-photo{display:block;width:58px;height:58px;object-fit:cover;background:#111}
+.place-gallery{margin-top:28px}
+.place-gallery-label{margin:0 0 9px;color:var(--muted);font-family:'DM Mono',ui-monospace,monospace;font-size:10px;font-weight:400;letter-spacing:.08em;text-transform:lowercase}
+.place-gallery-row{display:flex;gap:8px;align-items:flex-start}
+.place-gallery-photo{display:block;width:58px;height:58px;object-fit:cover;background:#111}
+.place-gallery-card{width:72px;margin:0}
+.place-gallery-card figcaption{width:72px;margin-top:6px;color:var(--muted);font-family:'DM Mono',ui-monospace,monospace;font-size:10px;line-height:1.4;font-weight:400;letter-spacing:.02em}
 .contact-list{display:flex;flex-direction:column;gap:26px;max-width:740px;font-family:'DM Mono',ui-monospace,monospace;font-size:13px;line-height:1.7}
 .contact-row{display:grid;grid-template-columns:minmax(110px,1fr) minmax(0,2fr);gap:28px}
 .contact-links{display:flex;flex-wrap:wrap;gap:8px 24px}
