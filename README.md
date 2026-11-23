@@ -1,6 +1,6 @@
 # Juni — personal site
 
-Static personal site for https://02jn1.github.io/. No build step is required.
+Static personal site for https://littleginkgotree.github.io/. No build step is required.
 
 ## Files
 
@@ -16,7 +16,7 @@ Run `python3 -m http.server` in this folder and open the local address it prints
 
 ## Publish
 
-Copy these files and the `assets/` folder to the root of `02jn1/02jn1.github.io`, then commit and push to its Pages source branch. GitHub Pages publishes from the repository root.
+Copy these files and the `assets/` folder to the root of `littleginkgotree/littleginkgotree.github.io`, then commit and push to its Pages source branch. GitHub Pages publishes from the repository root.
 
 ## Behavior
 
